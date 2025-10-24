@@ -1,0 +1,4 @@
+entity_id,label,type,source_url
+e_epstein,Jeffrey Epstein,person,https://www.bop.gov/inmateloc/
+e_maxwell,Ghislaine Maxwell,person,https://www.justice.gov/usao-sdny
+e_trump,Donald J. Trump,person,https://www.whitehouse.gov/about-the-white-house/presidents/donald-j-trump/
