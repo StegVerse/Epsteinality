@@ -1,0 +1,9 @@
+# .github/workflows/weekly-ingest.yml
+name: weekly-ingest
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 7 * * 1"
+jobs:
+  call:
+    uses: StegVerse/StegVerse-Core/.github/workflows/bio-weekly-ingest.yml@main
