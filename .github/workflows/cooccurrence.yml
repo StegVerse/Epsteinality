@@ -1,0 +1,9 @@
+# .github/workflows/cooccurrence.yml
+name: cooccurrence-scan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 8 * * 2,5"
+jobs:
+  call:
+    uses: StegVerse/StegVerse-Core/.github/workflows/bio-cooccurrence.yml@main
