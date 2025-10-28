@@ -1,0 +1,9 @@
+# .github/workflows/archive-and-monitor.yml
+name: archive-and-monitor
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * 2,5"
+jobs:
+  call:
+    uses: StegVerse/StegVerse-Core/.github/workflows/bio-archive-and-monitor.yml@main
