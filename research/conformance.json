@@ -1,28 +1,20 @@
 {
-  "schema": "stegverse.erl.research_conformance.v1",
-  "repository": "StegVerse-Labs/Epsteinality",
-  "role": "subject-acquisition-surface",
-  "canonical_owner": "StegVerse-Labs/Executive_Rhetoric_Ledger#60",
-  "evaluation_authority": "StegVerse-Labs/Executive_Rhetoric_Ledger",
-  "acquisition_authority": "local-public-source-discovery",
-  "adapter": "scripts/search_agent.py",
-  "frontier": "research/frontier.json",
-  "recurrence": {
-    "classification": "REQUIRED",
-    "owner": "StegVerse-Labs/Epsteinality",
-    "cadence_default": "weekly",
-    "basis": "ongoing documentary, court, institutional, and public-record releases can alter active trajectories",
-    "stop_condition": "all relevant trajectories SATURATED/SUPERSEDED or recurrence explicitly DELEGATED"
-  },
-  "scheduled_ingest": {
-    "classification": "transport",
-    "paths": [".github/workflows/weekly-ingest.yml"],
-    "note": "Existing weekly ingest is transport/ingest; ERL recurrence is satisfied only by trajectory-aware acquisition and receipts."
-  },
-  "candidate_posture": "lead-only/context-only until ERL review",
-  "native_records_mutation_by_erl_sidecar": false,
-  "github_token_authority": "NONE",
-  "credential_authority": "TV/TVC where applicable",
-  "validation_state": "PENDING_VALIDATION",
-  "next_action": "run deterministic populated fixture, validate trajectory-aware recurrence and ERL intake/transport, then promote registry to CONFORMING"
+  "schema":"stegverse.erl.research_conformance.v1",
+  "repository":"StegVerse-Labs/Epsteinality",
+  "role":"subject-acquisition-surface",
+  "canonical_owner":"StegVerse-Labs/Executive_Rhetoric_Ledger#60",
+  "evaluation_authority":"StegVerse-Labs/Executive_Rhetoric_Ledger",
+  "acquisition_authority":"local-public-source-discovery",
+  "adapter":"scripts/search_agent.py",
+  "frontier":"research/frontier.json",
+  "recurrence":{"classification":"REQUIRED","owner":"StegVerse-Labs/Epsteinality","cadence_default":"weekly","basis":"ongoing documentary, court, institutional, and public-record releases can alter active trajectories","stop_condition":"all relevant trajectories SATURATED/SUPERSEDED or recurrence explicitly DELEGATED"},
+  "scheduled_ingest":{"classification":"transport","paths":[".github/workflows/weekly-ingest.yml"],"note":"Existing weekly ingest is transport/ingest; ERL recurrence is satisfied only by trajectory-aware acquisition and receipts."},
+  "candidate_posture":"lead-only/context-only until ERL review",
+  "native_records_mutation_by_erl_sidecar":false,
+  "github_token_authority":"NONE",
+  "credential_authority":"TV/TVC where applicable",
+  "validation_state":"CONFORMING",
+  "validation_evidence":["tests/test_research_adapter_deterministic.py","research/receipts/2026-08-11-populated-adapter-and-intake-validation.json"],
+  "validated_adapter_commit":"93ba7272a94e0b46aa83a94c516689cee89e6978",
+  "next_action":"continue REQUIRED trajectory-aware acquisition; scheduled ingest remains transport unless explicitly reclassified"
 }
