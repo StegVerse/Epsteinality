@@ -1,0 +1,10 @@
+{
+  "schema":"stegverse.erl.research_surface_validation_receipt.v1",
+  "repository":"StegVerse-Labs/Epsteinality",
+  "adapter_commit":"93ba7272a94e0b46aa83a94c516689cee89e6978",
+  "test_fixture_commit":"3dc8a8aacb46d73e861b7529f7f4ba00e7dff4e9",
+  "validation_type":"local_deterministic_contract_harness_plus_committed_reproducible_fixture",
+  "assertions":{"active_trajectory_requests":1,"saturated_trajectory_requests":0,"candidate_count":2,"receipt_count":2,"supporting_candidate_preserved":true,"contrary_candidate_preserved":true,"null_result_preserved":true,"duplicate_matching_link_collapsed":true,"candidate_intake_validator":"PASS","credential_authority":"TV/TVC","github_token_authority":"NONE","authority_effect":"NONE","native_records_mutated":false,"evaluation_changed":false},
+  "result":"PASS",
+  "promotion_effect":"eligible for ERL registry CONFORMING promotion; local evaluation authority remains NONE"
+}
